@@ -10,6 +10,26 @@ O projeto está **em desenvolvimento** e foi construído **com apoio de ferramen
 
 Minha participação se concentra na definição do visual, das funcionalidades e nas correções, com apoio de IA no desenvolvimento. A documentação descreve os mecanismos presentes no projeto e os pontos que quero aprofundar durante minha formação.
 
+## Conheça o painel
+
+A NexAcc é um painel local para organizar registros, acompanhar indicadores e consultar o histórico das operações. Minha participação está no visual, na definição das funcionalidades e nas correções, com apoio de IA.
+
+**O que você pode conhecer aqui:**
+
+- **Interface:** navegação, configurações e cartões de acompanhamento.
+- **Organização dos dados:** registros, indicadores, histórico e cronograma.
+- **Parte técnica:** API em Python, banco SQLite e entrega de eventos entre componentes.
+
+### Prévia da interface
+
+![Interface NexAcc: cartões de acompanhamento, status e histórico com dados fictícios](docs/IMAGENS/03-fechamento-1440.png)
+
+*Captura do projeto anterior à revisão desta edição de demonstração. Nomes e dados fictícios; a imagem não representa uma operação em andamento.*
+
+[Ver mais imagens do painel](docs/IMAGENS/) · [Ver o tour animado](docs/IMAGENS/tour-painel.gif) · [Ver a apresentação no LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7511997585155575808/)
+
+**Este repositório não abre o painel funcionando no navegador.** Aqui estão as imagens, a documentação e o código da demonstração. A execução do sistema é local e exige configuração; consulte os requisitos e limites abaixo.
+
 ## Tecnologias
 
 - **Python:** API HTTP com `http.server`, validação e arquivos estáticos. O servidor também depende de `requests`, importado por um módulo interno.
