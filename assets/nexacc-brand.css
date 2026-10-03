@@ -1,0 +1,31 @@
+/* NexAcc — Órbita Dourada. Presentation assets only. */
+body.theme-onix .nexacc-marca {gap:0}
+body.theme-onix .nexacc-marca .crest,
+body.theme-onix .nexacc-marca .crest svg {width:96px;height:96px}
+body.theme-onix .nexacc-wordmark {display:block;width:154px;height:42px;margin:auto;overflow:hidden}
+body.theme-onix .nexacc-marca small {margin-top:2px;color:#e4cfaa}
+body.theme-onix .nexacc-splash-logo {display:block;width:min(660px,86vw);height:auto;margin:0 auto 24px}
+body.theme-onix .orion-splash .os-por {color:#d6b469;letter-spacing:.24em;padding-left:.24em}
+body.theme-onix .ag-art.nexacc-art {
+  width:min(100%,300px);height:100%;aspect-ratio:1;right:3%;bottom:0;
+  mask-image:none;mask-composite:add;transform-origin:50% 50%;
+}
+body.theme-onix .app.compacto .nexacc-marca .crest,
+body.theme-onix .app.compacto .nexacc-marca .crest svg {width:44px;height:51px}
+body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) .nexacc-marca .crest,
+body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) .nexacc-marca .crest svg {width:96px;height:96px}
+@media(min-width:1500px) {
+  body.theme-onix .nexacc-wordmark {width:170px;height:46px}
+}
+@media(max-height:760px) and (min-width:821px) {
+  body.theme-onix .nexacc-marca .crest,
+  body.theme-onix .nexacc-marca .crest svg {width:82px;height:82px}
+  body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) .nexacc-marca .crest,
+  body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) .nexacc-marca .crest svg {width:82px;height:82px}
+}
+@media(max-width:820px) {
+  body.theme-onix .app.compacto .nexacc-marca .crest,
+  body.theme-onix .app.compacto .nexacc-marca .crest svg,
+  body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) .nexacc-marca .crest,
+  body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) .nexacc-marca .crest svg {width:96px;height:96px}
+}

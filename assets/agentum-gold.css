@@ -1,0 +1,253 @@
+/* Agentum Grafite Dourado. Colors sampled from the user-approved preview.
+   Presentation only: source artwork is unchanged, all amounts remain live DOM text. */
+body.theme-onix {
+  --bg:#03090e;--bg2:#070c10;--surface:#080e13;--surface2:#10171d;--surfaceH:#1a2023;
+  --border:#33434c;--border2:#697371;--txt:#f3f5f8;--muted:#afc3d8;--muted2:#96abc0;
+  --petrol:#d6b469;--petrol2:#f9e3b7;--purple:#e04658;--purple2:#ff8394;
+  --green:#00d995;--green2:#4fffc2;--red:#ff5261;--red2:#ff8b99;--orion:#32acff;
+  --disp:"Segoe UI",Arial,sans-serif;
+  --accent:linear-gradient(115deg,#7b652f,#342e1e 54%,#13181b);
+  --hi:inset 0 1px 0 #e4d3aa12;
+  font-family:"Segoe UI",Arial,sans-serif;
+}
+body.theme-onix::before {background:radial-gradient(ellipse at 0 0,#a4833b12,transparent 37%),radial-gradient(ellipse at 88% 5%,#06437414,transparent 48%),linear-gradient(140deg,#080b0c,#02090f 75%)}
+body.theme-onix .sidebar {width:220px;padding:20px 12px 16px;background:radial-gradient(ellipse at 0 0,#bd9c5426,transparent 38%),linear-gradient(150deg,#10100e,#030b11 62%,#121715);border-right:1px solid #65604c69}
+body.theme-onix .sidebar::after {background:linear-gradient(#d3b0656e,#0b4a7255,#6863466b);width:1px}
+body.theme-onix .marca {box-sizing:border-box;height:176px;min-height:176px;flex-shrink:0;flex-direction:column;align-items:center;gap:2px;padding:0 0 22px;font-size:27px;line-height:1.12;letter-spacing:1.3px;text-align:center}
+body.theme-onix .marca .crest {display:block;width:72px;height:78px;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+body.theme-onix .marca .crest svg {width:72px;height:78px;filter:none}
+body.theme-onix .brand-wordmark {color:#d4ddea;font-weight:750;text-shadow:0 1px 0 #fff7,0 4px 5px #000}
+body.theme-onix .marca small {font-size:9px;line-height:1.5;letter-spacing:1.45px;color:#b6cceb;margin-top:6px;font-weight:400}
+body.theme-onix .side-group {display:none}
+body.theme-onix nav {gap:3px;margin:0}
+body.theme-onix nav + nav {margin-top:3px}
+body.theme-onix nav button {border:1px solid transparent;background:transparent;border-radius:10px;min-height:46px;gap:14px;padding:10px 13px;font-size:15px;font-weight:400;color:#d9e2ee;box-shadow:none}
+body.theme-onix nav button .ico {width:21px;height:21px;padding:0;border:0;border-radius:0;box-sizing:border-box;background:none;color:#c3d7f1;stroke-width:1.6}
+body.theme-onix nav button[data-aba] .ico {color:#c3d7f1}
+body.theme-onix nav button:hover:not(.ativa) {padding-left:13px;background:linear-gradient(105deg,#c6a15019,#005f9516);border-color:#d8b77755;color:white;box-shadow:none}
+body.theme-onix nav button.ativa {font-weight:650;color:white;border:1px solid transparent;background:linear-gradient(110deg,#857043,#443d28 34%,#181e20 95%) padding-box,linear-gradient(130deg,#fff2cf,#b69a5b 38%,#009dff 94%) border-box;box-shadow:inset 0 1px 0 #fff0cf80,inset 0 -1px 0 #55b7ee55,0 0 13px #12a2f729,0 3px 12px #0007}
+body.theme-onix nav button.ativa .ico {color:#fff8e9;background:none;border:0}
+body.theme-onix nav button.ativa::after {display:none}
+body.theme-onix .nav-live {margin-left:auto}
+body.theme-onix .side-foot {margin-top:auto;border-top:1px solid #77879050;padding:16px 9px 0;color:#9bacbe;font-size:10px}
+body.theme-onix .side-foot .orion {font-size:12px;letter-spacing:1px;color:#b7ccef}
+body.theme-onix .topbar {min-height:55px;padding:10px 23px;background:linear-gradient(105deg,#0c141d,#030b12 65%);border-bottom:1px solid #a98a416d;box-shadow:0 4px 18px #0003}
+body.theme-onix .sync-pill {background:transparent;border-color:#315361;font-size:11px}
+body.theme-onix .topchip,body.theme-onix .topchip.pos,body.theme-onix .topchip.neg {background:transparent;border-color:#34505a}
+body.theme-onix .topchip .tr {font-size:11px;text-transform:none;letter-spacing:0;color:#c6d2e3}
+body.theme-onix .collapse-btn,body.theme-onix .hamburger {background:#0c141c;border-color:#50647750}
+body.theme-onix .relogio .hora {font-family:"Segoe UI",sans-serif;font-size:16px;font-weight:400}
+body.theme-onix main {max-width:1640px;padding:22px 20px 58px}
+body.theme-onix .ox-eyebrow {display:none}
+body.theme-onix h2.tit {font-family:"Segoe UI",sans-serif;font-size:37px;font-weight:750;letter-spacing:-1px;line-height:1.16;margin:0 0 8px}
+body.theme-onix .sub {font-size:14px;line-height:1.6;color:#b4cce6;margin-bottom:22px}
+body.theme-onix .av-head {position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:15px;margin:0 0 32px}
+body.theme-onix .av-head .sub {margin:0}
+body.theme-onix .av-head h2 {white-space:nowrap}
+body.theme-onix .av-actions {margin:0;padding:0;gap:10px;flex-shrink:0}
+body.theme-onix .btn {color:#f5f3ed;font-size:12px;font-weight:550;border:1px solid #a994655e;border-radius:7px;background:linear-gradient(115deg,#4d4025,#171b1d);box-shadow:inset 0 1px 0 #f3e8c747,0 3px 10px #0005;min-height:37px;padding:9px 13px}
+body.theme-onix .btn.ghost,body.theme-onix .btn.mini {background:linear-gradient(135deg,#101821,#020b13);color:#e3ebf6;border:1px solid #365879;box-shadow:inset 0 1px 0 #779cb814}
+body.theme-onix .btn.ghost:hover,body.theme-onix .btn.mini:hover {background:linear-gradient(120deg,#17314a,#11191f);border-color:#8dbce2;box-shadow:0 0 12px #1286d01c}
+body.theme-onix #avZerar {border-color:#c5c6c8}
+body.theme-onix .btn.go {background:linear-gradient(130deg,#067447,#034832 48%,#08291f);border:1px solid #48fbb6;color:#fff;box-shadow:inset 0 1px 0 #b4ffda80,inset 0 0 12px #05d78f30,0 2px 12px #00d18618}
+body.theme-onix .btn.danger {color:#ff8593;background:#210f14;border-color:#cc3e5655}
+body.theme-onix .btn.tg {background:#0c4160;color:#d5edff;border-color:#38a1d3}
+body.theme-onix .btn.mini {min-height:31px;padding:5px 10px;font-size:11px}
+body.theme-onix .periodo-bar {background:#040b11;border-color:#3a474d}
+body.theme-onix .periodo-bar button.on {color:#fff0d2;background:linear-gradient(110deg,#5f5032,#302a1c);box-shadow:inset 0 0 0 1px #b9965266}
+body.theme-onix .av-card.resultado.ox-hero {position:relative;overflow:visible;isolation:isolate;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);min-height:250px;border-radius:13px;border:1px solid transparent;background:radial-gradient(ellipse at 5% 0,#bc965632,transparent 30%),radial-gradient(ellipse at 90% 25%,#075d922b,transparent 55%),linear-gradient(110deg,#070c10,#020a11 66%) padding-box,linear-gradient(125deg,#f1d499,#0a78c7 48%,#078dc7 80%,#e2bd6f) border-box;box-shadow:inset 0 1px 0 #ecd7a23d,0 10px 32px #0007;margin:0}
+body.theme-onix .ox-hero::before {inset:1px;border-radius:12px;background:repeating-linear-gradient(135deg,transparent 0 3px,#d9c18903 3px 4px);z-index:-1}
+body.theme-onix .ox-hero::after {display:none}
+body.theme-onix .ox-hero-copy {padding:29px 0 29px 30px;align-self:center}
+body.theme-onix .ox-hero .avc-rot {font-size:12px;letter-spacing:2.1px;color:#c2dbf4;font-weight:450}
+body.theme-onix .ox-signal {display:none}
+body.theme-onix .av-card.resultado .avc-hero {font-family:"Segoe UI",Arial,sans-serif;font-size:clamp(36px,5.4vw,85px);letter-spacing:-2.8px;font-weight:850;line-height:1.15;margin-top:12px;color:#f8e1ae;text-shadow:0 2px 0 #8a7447,0 4px 9px #0009}
+body.theme-onix .av-card.resultado.pos .avc-hero,body.theme-onix .av-card.resultado.zero .avc-hero {color:#ffe5ac;background:linear-gradient(#fff8e8 2%,#ffe8b8 43%,#ba9658 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 3px 2px #0007);text-shadow:none}
+body.theme-onix .av-card.resultado.neg .avc-hero {color:#ff8a95;background:none;-webkit-text-fill-color:#ff8a95;text-shadow:0 1px 0 #983445}
+body.theme-onix .ox-formula {font-size:13px;color:#bdd4ee;margin-top:13px;letter-spacing:0}
+body.theme-onix .ox-hero .avc-delta {font-size:10px;margin-top:17px;color:#acc1d5}
+body.theme-onix .ox-scene {min-height:250px;overflow:visible;border-radius:0 12px 12px 0;position:relative;align-self:stretch}
+body.theme-onix .ox-scene-glow {inset:5% 0;background:radial-gradient(ellipse at 47% 75%,#d7a95120,transparent 55%),radial-gradient(ellipse at 73% 40%,#0781df22,transparent 65%);filter:blur(10px)}
+body.theme-onix .ag-art {position:absolute;width:min(100%,540px);height:auto;aspect-ratio:540 / 315;right:0;bottom:0;overflow:hidden;z-index:1;pointer-events:none;transform-origin:55% 60%;mask-image:linear-gradient(90deg,transparent 0%,black 14%,black 84%,transparent 100%),linear-gradient(180deg,transparent 0%,black 6%,black 100%);mask-composite:intersect}
+body.theme-onix .ag-art[hidden] {display:none}
+body.theme-onix .ox-motion {right:12px;bottom:9px;width:24px;height:24px;font-size:9px;border-color:#a9946566;background:#051019bc;color:#e6d1a8;box-shadow:none}
+body.theme-onix .ox-scene-note {position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+body.theme-onix .ox-focus[aria-pressed=true] {border-color:#e8c88e;color:#ffe6b7;background:#4c3c202b}
+body.theme-onix .av-cards.ox-metrics {gap:10px;margin:11px 0 0;grid-template-columns:repeat(4,minmax(0,1fr))}
+body.theme-onix .ox-metrics .av-card,body.theme-onix .ox-metrics .av-media {min-height:112px;padding:15px 12px 14px 58px;border-radius:11px;border-width:1px;border-style:solid;gap:0}
+body.theme-onix .ox-metrics .dep {border-color:#ce424f;background:radial-gradient(ellipse at 0 0,#ff3f4720,transparent 75%),linear-gradient(120deg,#210d11,#10090c);box-shadow:inset 0 1px 0 #ffacac3d,inset 0 0 19px #d8252c15}
+body.theme-onix .ox-metrics .saq {border-color:#0ba36c;background:radial-gradient(ellipse at 0 0,#00d5961c,transparent 75%),linear-gradient(120deg,#00261d,#021510);box-shadow:inset 0 1px 0 #7effc92e,inset 0 0 19px #08e89614}
+body.theme-onix .ox-metrics .av-media,body.theme-onix .ox-metrics .av-media.pos,body.theme-onix .ox-metrics .av-media.neg {border-color:#057fb7;background:radial-gradient(ellipse at 0 0,#00a1ff24,transparent 75%),linear-gradient(120deg,#012233,#020f1b);box-shadow:inset 0 1px 0 #63cfff3d,inset 0 0 19px #008ce919}
+body.theme-onix .ox-metrics .ox-bonus-card {border-color:#bb9838;background:radial-gradient(ellipse at 0 0,#f9c74624,transparent 75%),linear-gradient(120deg,#2c2514,#0e1110);box-shadow:inset 0 1px 0 #ffefa73d,inset 0 0 19px #b6973514}
+body.theme-onix .ox-metrics .avc-top {margin:0 0 4px;display:block}
+body.theme-onix .ox-metrics .avc-rot,body.theme-onix .ox-metrics .av-media .am-rot {font-size:12px;letter-spacing:0;text-transform:none;font-weight:450;color:#e7eaf0;line-height:1.3;margin:0 0 4px;display:block}
+body.theme-onix .ox-metrics .av-media .am-rot span {display:none}
+body.theme-onix .ox-metrics .ox-bonus-card .avc-rot {color:#ffe185}
+body.theme-onix .ox-metrics .ox-metric-icon {position:absolute;left:13px;top:30px;width:33px;height:33px;padding:7px;box-sizing:border-box;border:1px solid currentColor;border-radius:8px;stroke-width:1.65;background:#0002;overflow:visible}
+body.theme-onix .ox-metrics .dep .ox-metric-icon {color:#ff7380;box-shadow:0 0 13px #ff243a22}
+body.theme-onix .ox-metrics .saq .ox-metric-icon {color:#20eea7;box-shadow:0 0 13px #00ffaa18}
+body.theme-onix .ox-metrics .av-media .ox-metric-icon {color:#49d0ff;box-shadow:0 0 13px #00aaff22}
+body.theme-onix .ox-metrics .ox-bonus-card .ox-metric-icon {color:#edcf72;box-shadow:0 0 13px #eabd3c22}
+body.theme-onix .ox-metrics .avc-val,body.theme-onix .ox-metrics .dep .avc-val,body.theme-onix .ox-metrics .saq .avc-val,body.theme-onix .ox-metrics .av-media .am-val,body.theme-onix .ox-metrics .avc-val b {font-family:"Segoe UI",sans-serif;font-size:clamp(20px,1.8vw,29px);font-weight:700;letter-spacing:-.6px;line-height:1.25;color:#f4f4f7;margin:0}
+body.theme-onix .ox-metrics .avc-sub {margin-top:5px;font-size:10px;letter-spacing:.1px;color:#abcbe5;line-height:1.5}
+body.theme-onix .ox-metrics .avc-qtd {display:inline;padding:0;border:0;border-radius:0;background:none;color:inherit;font-size:inherit;min-width:0}
+body.theme-onix .ox-metrics .av-media .am-right {margin-top:5px;gap:6px;display:flex;flex-wrap:wrap;align-items:center}
+body.theme-onix .ox-metrics .am-delta {font-size:9px}
+body.theme-onix .ox-metrics .am-alvo {font-size:8px}
+body.theme-onix .ox-metrics .am-alvo input {width:34px;min-height:20px;font-size:10px;border-radius:4px;padding:1px 3px}
+body.theme-onix #aba-aovivo.ativa {display:flex;flex-direction:column}
+body.theme-onix #aba-aovivo .av-head {order:0}
+body.theme-onix #avResCard {order:1}
+body.theme-onix #aba-aovivo .ox-metrics {order:2}
+body.theme-onix #aba-aovivo .av-extra {order:3}
+body.theme-onix #avPendentes,body.theme-onix #avDescartados {order:4}
+body.theme-onix #avLogPainel {order:5}
+body.theme-onix #avConferencia {order:6}
+body.theme-onix #avInd {order:7}
+body.theme-onix #aba-aovivo .ox-sync-guide {order:8}
+body.theme-onix .painel,body.theme-onix .card,body.theme-onix .hk,body.theme-onix .hist-card,body.theme-onix .destaque-card,body.theme-onix .cm-card,body.theme-onix .dia-card {background:radial-gradient(ellipse at 0 0,#aa8a4510,transparent 36%),linear-gradient(120deg,#0b1014,#030b12);border:1px solid #405056;box-shadow:inset 0 1px 0 #b4c9db14,0 8px 26px #0003;border-radius:11px}
+body.theme-onix .painel {padding:18px;margin-top:16px}
+body.theme-onix .painel h3 {color:#e7edf5;font-size:15px;font-weight:600;margin-bottom:15px}
+body.theme-onix .painel h3 .hint {color:#a9bdd4}
+body.theme-onix .av-extra {padding:12px 16px;margin-top:10px;border-color:#a58a4c66;border-radius:10px}
+body.theme-onix .ax-row {display:flex;align-items:center;gap:18px}
+body.theme-onix .ax-field {display:flex;flex-direction:row;align-items:center;gap:10px;flex:1;min-width:0;text-align:left}
+body.theme-onix .ax-field span {font-size:12px;color:#e6eaf1;letter-spacing:0;text-transform:none;white-space:nowrap}
+body.theme-onix .ax-field input {width:100%;min-width:40px;max-width:180px;min-height:31px;height:31px;font-size:12px}
+body.theme-onix .ax-info {display:none}
+body.theme-onix #avLogPainel {border:1px solid transparent;background:linear-gradient(130deg,#0d1216,#020a10) padding-box,linear-gradient(125deg,#ab9053,#1b506d 55%,#277eae) border-box;margin-top:10px;padding:16px}
+body.theme-onix #avLogPainel h3 {font-size:17px;line-height:1.4}
+body.theme-onix .log-grupo {background:#020b11;border:1px solid #34454e;border-radius:7px;overflow:hidden}
+body.theme-onix .lg-head {background:linear-gradient(100deg,#232019,#071520);padding:11px 12px;border-bottom:1px solid #4a504b}
+body.theme-onix .lg-casa {font-family:"Segoe UI",sans-serif;font-size:12px;letter-spacing:.5px;font-weight:600;color:#dfe7f2}
+body.theme-onix .av-item {padding:10px 5px;border-bottom:1px solid #233646;color:#d1deed;gap:12px}
+body.theme-onix .av-item.dep .ai-tipo,body.theme-onix .av-item.dep .ai-ico {color:#ff4c64}
+body.theme-onix .av-item.saq .ai-tipo,body.theme-onix .av-item.saq .ai-ico {color:#0be8a3}
+body.theme-onix .av-item .ai-val {color:#f4f5f8;font-size:13px;font-weight:600}
+body.theme-onix .ai-org.api {background:#052e23;color:#47ffbd;border:1px solid #076d4a;padding:2px 6px;border-radius:6px}
+body.theme-onix .conf-chip {background:#06131a;border:1px solid #254954}
+body.theme-onix input:not([type=checkbox]):not([type=radio]):not([type=file]),body.theme-onix select,body.theme-onix textarea {background:linear-gradient(115deg,#111a22,#061018);border:1px solid #3c5367;color:#e8eff9;border-radius:5px;box-shadow:inset 0 1px 5px #0006}
+body.theme-onix input:focus,body.theme-onix select:focus,body.theme-onix textarea:focus {border-color:#dfc389;box-shadow:0 0 0 2px #d4b16922}
+body.theme-onix #tblOperacoes input.num.neg {color:#ff8b99;border-color:#944354}
+body.theme-onix #tblOperacoes input.num.pos {color:#4fffc2;border-color:#277e63}
+body.theme-onix .painel-tabela thead th,body.theme-onix .cm-tabwrap th {background:#040d16;color:#b8d6fa;border-color:#32495e}
+body.theme-onix th {font-size:10px;color:#b8d6fa;border-color:#32495e}
+body.theme-onix td {border-color:#1d2c39}
+body.theme-onix tbody tr:hover {background:#08233359}
+body.theme-onix .kpi-hero {border-color:#a38d5680;background:radial-gradient(ellipse at 0 0,#b08d431c,transparent 65%),linear-gradient(125deg,#101412,#040c11)}
+body.theme-onix .card .rot {color:#b8c9db}
+body.theme-onix .cm-cell {background:#061017;border-color:#304552}
+body.theme-onix .cm-cell:nth-child(1) {background:linear-gradient(130deg,#240d13,#070d13);border-top-color:#a83949}
+body.theme-onix .cm-cell:nth-child(2) {background:linear-gradient(130deg,#092234,#070d13);border-top-color:#007bab}
+body.theme-onix .cm-cell:nth-child(3) {background:linear-gradient(130deg,#04291f,#070d13);border-top-color:#06a974}
+body.theme-onix .cm-cell:nth-child(4) {background:linear-gradient(130deg,#27200e,#070d13);border-top-color:#b89845}
+body.theme-onix .modal {background:linear-gradient(125deg,#18201e,#06111a);border-color:#90815e}
+body.theme-onix .toast {background:#0a1720;border-color:#6e8390}
+body.theme-onix .orion-splash {background:radial-gradient(ellipse at 35% 40%,#51422622,transparent 55%),#020a10}
+body.theme-onix .app.compacto .sidebar {width:72px;padding-left:10px;padding-right:10px}
+body.theme-onix .app.compacto .marca {padding:0 0 20px;gap:0;align-items:center}
+body.theme-onix .app.compacto .marca .crest,body.theme-onix .app.compacto .marca .crest svg {width:44px;height:51px}
+body.theme-onix .app.compacto nav button {font-size:0;min-height:46px;justify-content:center;gap:0;padding:10px 0}
+body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) {width:220px;padding-left:12px;padding-right:12px}
+body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) .marca .crest,body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) .marca .crest svg {width:72px;height:78px}
+body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) .marca {gap:2px}
+body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) nav button {font-size:15px;justify-content:flex-start;gap:14px;padding:10px 13px}
+body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) .side-group {display:none}
+@media(min-width:1500px) {
+  body.theme-onix .sidebar {width:246px}
+  body.theme-onix .marca {padding-bottom:25px;font-size:30px}
+  body.theme-onix .marca .crest,body.theme-onix .marca .crest svg {width:82px;height:87px}
+  body.theme-onix nav button {min-height:54px;font-size:17px}
+  body.theme-onix .app.compacto nav button {min-height:54px}
+  body.theme-onix main {padding:24px 20px 58px}
+  body.theme-onix h2.tit {font-size:44px}
+  body.theme-onix .av-card.resultado.ox-hero,body.theme-onix .ox-scene {min-height:276px}
+  body.theme-onix .ox-metrics .av-card,body.theme-onix .ox-metrics .av-media {min-height:118px;padding-left:73px}
+  body.theme-onix .ox-metrics .ox-metric-icon {left:18px;width:40px;height:40px}
+  body.theme-onix .av-actions .btn {font-size:14px;padding:12px 16px}
+}
+@media(max-width:1150px) {
+  body.theme-onix .av-head {display:block}
+  body.theme-onix .av-actions {margin-top:15px}
+  body.theme-onix .av-cards.ox-metrics {grid-template-columns:repeat(2,minmax(0,1fr))}
+  body.theme-onix .av-card.resultado .avc-hero {font-size:clamp(32px,5.5vw,67px)}
+}
+@media(max-height:760px) and (min-width:821px) {
+  body.theme-onix .sidebar {padding-top:14px}
+  body.theme-onix .marca {height:154px;min-height:154px;padding-bottom:15px}
+  body.theme-onix nav button {min-height:43px}
+  body.theme-onix .app.compacto nav button {min-height:43px}
+  body.theme-onix .side-foot {padding-top:10px}
+}
+@media(max-width:820px) {
+  body.theme-onix .sidebar,body.theme-onix .app.compacto .sidebar,body.theme-onix .app.compacto .sidebar:is(:hover,:focus-within) {width:230px;padding:18px 12px}
+  body.theme-onix .app.compacto .marca span:not(.crest),body.theme-onix .app.compacto .side-foot {display:block}
+  body.theme-onix .app.compacto .marca .crest,body.theme-onix .app.compacto .marca .crest svg {width:72px;height:78px}
+  body.theme-onix .app.compacto nav button {font-size:15px;justify-content:flex-start;gap:14px;padding:10px 13px}
+  body.theme-onix .topbar {padding:10px 15px;min-height:60px}
+  body.theme-onix .ox-hero-copy {padding:23px 0 23px 22px}
+  body.theme-onix .av-card.resultado.ox-hero {grid-template-columns:minmax(0,1fr) minmax(0,.85fr)}
+  body.theme-onix h2.tit {font-size:31px}
+  body.theme-onix .ax-row {gap:12px}
+  body.theme-onix .ax-field {display:block}
+  body.theme-onix .ax-field span {display:block;margin-bottom:5px}
+}
+@media(max-width:560px) {
+  body.theme-onix main {padding:22px 12px 48px}
+  body.theme-onix .topbar {min-height:84px;padding:10px 12px}
+  body.theme-onix h2.tit {font-size:29px}
+  body.theme-onix .sub {font-size:12px}
+  body.theme-onix .av-head h2 {white-space:normal}
+  body.theme-onix .av-actions {gap:7px}
+  body.theme-onix .av-actions .btn {padding:8px 9px;font-size:11px}
+  body.theme-onix .av-card.resultado.ox-hero {grid-template-columns:1fr;min-height:0;overflow:hidden}
+  body.theme-onix .ox-hero-copy {padding:24px 22px 0}
+  body.theme-onix .av-card.resultado .avc-hero {font-size:48px;letter-spacing:-1.8px;overflow-wrap:anywhere}
+  body.theme-onix .ox-hero .avc-rot {font-size:10px}
+  body.theme-onix .ox-formula {font-size:11px}
+  body.theme-onix .ox-hero .avc-delta {margin-top:9px;font-size:10px}
+  body.theme-onix .ox-scene {min-height:220px;margin:0;border-radius:0 0 12px 12px}
+  body.theme-onix .ag-art {height:auto}
+  body.theme-onix .ox-metrics .av-card,body.theme-onix .ox-metrics .av-media {padding:14px 12px;min-height:138px}
+  body.theme-onix .ox-metrics .ox-metric-icon {position:static;float:left;margin:0 7px 0 0;width:22px;height:22px;padding:3px;border-radius:5px}
+  body.theme-onix .ox-metrics .avc-rot,body.theme-onix .ox-metrics .av-media .am-rot {font-size:10px;min-height:27px;margin-bottom:5px}
+  body.theme-onix .ox-metrics .avc-val,body.theme-onix .ox-metrics .dep .avc-val,body.theme-onix .ox-metrics .saq .avc-val,body.theme-onix .ox-metrics .av-media .am-val,body.theme-onix .ox-metrics .avc-val b {font-size:24px;clear:both}
+  body.theme-onix .av-extra {padding:12px;margin-top:10px}
+  body.theme-onix .ax-row {gap:9px;flex-wrap:wrap}
+  body.theme-onix .ax-field:first-child {flex:1 1 100%}
+  body.theme-onix .ax-field input {width:100%!important;max-width:none}
+  body.theme-onix #avLogPainel {padding:13px}
+  body.theme-onix #avLogPainel h3 {font-size:14px}
+  body.theme-onix .av-item {gap:8px}
+}
+@media(prefers-reduced-motion:reduce) {body.theme-onix .ag-art {will-change:auto}}
+
+/* Só metas vinculadas ao Ao Vivo recebem amarelo; seleção ainda não é início. */
+body.theme-onix #tblOperacoes tbody tr.sel-row:not(.meta-live) {background:#94a3b810}
+body.theme-onix #tblOperacoes tbody tr.sel-row:not(.meta-live) td:first-child {box-shadow:inset 3px 0 0 #94a3b880}
+body.theme-onix #tblOperacoes tbody tr.meta-live {background:linear-gradient(100deg,#dba52b1d,#dba52b06 80%)}
+body.theme-onix #tblOperacoes tbody tr.meta-live td {border-bottom-color:#d6a33155}
+body.theme-onix #tblOperacoes tbody tr.meta-live td:first-child {box-shadow:inset 3px 0 0 #f5c451}
+body.theme-onix #tblOperacoes tbody tr.meta-live .plat-cell input {color:#ffe5a0;border-color:#e6b23b9c;background:linear-gradient(110deg,#443518,#171c1c);box-shadow:inset 3px 0 0 #f5c451;font-weight:700}
+body.theme-onix #tblOperacoes tbody tr.meta-live .plat-cell .dot {background:#f5c451;box-shadow:0 0 9px #f5c45180}
+body.theme-onix #tblOperacoes tbody tr.meta-live .selo.s-live {color:#ffe6a3;background:#b67e1c30;border:1px solid #dcae4b66;font-weight:700}
+
+/* ===== Ícones do menu: completar o conjunto que já existia =====
+   onix.css já colore Ao Vivo (dourado), Metas (rosa) e Conta Mãe (verde) — os outros tinham
+   ficado no azul-pálido de fallback e pareciam apagados. Aqui entram os que faltavam, na mesma
+   chave: um tom por assunto, saturação baixa, e o brilho só no hover para o menu ficar calmo
+   em repouso. Mesma especificidade das regras do onix, senão não pegam. */
+body.theme-onix nav button[data-aba="inicio"]:not(.ativa) .ico {color:#d6e0ec}
+body.theme-onix nav button[data-aba="jogos"]:not(.ativa) .ico {color:#f0b96f}        /* fichas, âmbar */
+body.theme-onix nav button[data-aba="vigia"]:not(.ativa) .ico {color:#8fd6b4}        /* vigia: verde de "tudo certo" */
+body.theme-onix nav button[data-aba="formularios"]:not(.ativa) .ico {color:#8fb8e8}  /* dados, azul */
+body.theme-onix nav button[data-aba="referencias"]:not(.ativa) .ico {color:#8fb8e8}
+body.theme-onix nav button[data-aba="historico"]:not(.ativa) .ico {color:#a6b6c9}
+body.theme-onix nav button[data-aba="cronograma"]:not(.ativa) .ico {color:#b3a9dd}   /* calendário, lilás */
+body.theme-onix nav button[data-aba="ajustes"]:not(.ativa) .ico {color:#9dabb9}
+
+/* o brilho usa currentColor: cada ícone acende no próprio tom, sem repetir cor em regra nenhuma */
+body.theme-onix nav button .ico {transition:color .16s ease,filter .16s ease,transform .18s cubic-bezier(.34,1.56,.64,1)}
+body.theme-onix nav button:hover:not(.ativa) .ico {filter:drop-shadow(0 0 7px currentColor) saturate(1.15)}
+body.theme-onix nav button.ativa .ico {filter:drop-shadow(0 1px 2px rgba(0,0,0,.45))}
+body.theme-onix nav button[data-aba="aovivo"] .nav-live {box-shadow:0 0 8px #ffda8b}

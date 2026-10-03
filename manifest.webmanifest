@@ -1,0 +1,14 @@
+{
+  "name": "NexAcc — Painel de Operações",
+  "short_name": "NexAcc",
+  "description": "Controle de operações por plataforma, BAU & Gerente, histórico mensal e alertas diários.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07090c",
+  "theme_color": "#07090c",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "assets/nexacc/nexacc-icone.png", "sizes": "1254x1254", "type": "image/png", "purpose": "any" }
+  ]
+}

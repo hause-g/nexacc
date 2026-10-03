@@ -1,0 +1,10 @@
+{
+  "_comentario": "Exemplo de cronograma (quem encerra ao meio-dia em cada dia). 0=domingo ... 6=sabado.",
+  "0": ["Casa Alfa", "Casa Beta"],
+  "1": ["Casa Gama", "Casa Delta"],
+  "2": ["Casa Epsilon", "Casa Zeta"],
+  "3": ["Casa Alfa", "Casa Beta"],
+  "4": ["Casa Gama", "Casa Delta"],
+  "5": ["Casa Epsilon", "Casa Zeta"],
+  "6": ["Casa Alfa", "Casa Gama"]
+}

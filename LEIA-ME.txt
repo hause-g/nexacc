@@ -1,0 +1,35 @@
+NEXACC — PAINEL DE OPERAÇÕES
+Edição de demonstração e estudo
+
+Projeto pessoal de João Pedro Guimarães, desenvolvido com apoio de inteligência artificial.
+Leia README.md para conhecer arquitetura, dependências, limitações e escopo do portfólio.
+
+O servidor HTTP e o banco principal são locais. Python 3.10+ e requests são necessários:
+um módulo importado pelo servidor exige requests mesmo sem acionar integrações.
+O projeto original foi desenvolvido para Windows. Outros sistemas precisam de verificação.
+
+Use uma cópia dedicada e um perfil de navegador separado, com dados sintéticos.
+Não importe bancos, backups, credenciais ou sessões reais para a demonstração.
+As extensões se limitam a http://filhateste.invalid/* e http://maeteste.invalid/*.
+Elas são destinadas ao ambiente de testes isolado, nunca ao perfil pessoal.
+O backend de demonstração usa http://127.0.0.1:8765.
+O exportador de sessões foi retirado; os parsers mantêm dados sintéticos.
+As extensões usam armazenamento separado das instalações anteriores.
+A API aceita iniciar apenas simulações com dry_run: true. Sessões reais não são listadas,
+e a sincronização externa é recusada.
+
+Existem recursos opcionais de Telegram e busca de imagens em CDN que podem comunicar
+dados pela internet. Execução local não significa funcionamento integral offline.
+
+Os testes usam Python, Node.js e, nos testes de navegador, Playwright.
+O executor seleciona 47 arquivos; a contagem não representa aprovação integral.
+Na revisão parcial de 02/10/2026 passaram 54 casos Node, 4 testes Python e 28 verificações
+mae_confiabilidade.js. captura_browser.test.cjs usa uma VM simulada, não navegador real.
+A suíte completa, navegadores reais e Windows não foram verificados.
+README.md identifica os arquivos correspondentes; novas execuções precisam de relatório.
+
+O nome público é NexAcc. Prefixos internos Agentum foram preservados por compatibilidade.
+Esta edição não inclui instruções para operar contas reais ou automatizar apostas.
+
+Documentação técnica: docs/ARQUITETURA.md
+Licença: MIT, conforme LICENSE.

@@ -1,0 +1,39 @@
+╔══════════════════════════════════════════════════════════════════╗
+║        ALERTA DIÁRIO NO TELEGRAM — meio-dia, mesmo app fechado      ║
+╚══════════════════════════════════════════════════════════════════╝
+
+Bot: @HideBoxAlertBot
+
+▶ O QUE É
+   Todo dia ao meio-dia, o Windows roda um script que te manda no Telegram
+   quais plataformas encerram hoje — sem precisar abrir nada.
+
+▶ PASSO A PASSO (uma vez só)
+   1. No Telegram, abra https://t.me/HideBoxAlertBot e clique em INICIAR.
+      Mande qualquer mensagem (ex: "oi").
+   2. Rode "1 - Pegar meu chat_id.bat"  → guarda seu chat_id no config.json.
+   3. Rode "2 - Testar alerta agora.bat" → deve chegar a mensagem no Telegram.
+   4. Rode "3 - Instalar alerta diario (meio-dia).bat" → agenda pro meio-dia.
+      (pode pedir confirmação do Windows — é normal)
+
+   Pronto! Todo meio-dia chega o aviso.
+
+▶ MUDAR O HORÁRIO
+   No painel: Ajustes › Alerta diário. A tarefa confere a cada 15 min e manda
+   uma vez por dia depois desse horário (PC desligado no horário = manda
+   assim que ligar). O hora_envio do config.json só vale se o painel não tiver.
+
+▶ O QUE VEM NA MENSAGEM
+   Quem LANÇA e quem ENCERRA hoje, lido do Cronograma do painel na hora do
+   envio — casa nova adicionada lá já entra no próximo alerta.
+
+▶ PARAR DE RECEBER
+   Rode "Desinstalar alerta.bat".
+
+▶ MUDOU O CRONOGRAMA NO APP?
+   Nada a fazer: o alerta lê o cronograma do banco do painel. O cronograma.json
+   desta pasta é só reserva para quando o banco não existir.
+
+▶ SEGURANÇA
+   O arquivo config.json contém o TOKEN do bot (controla o bot). Não compartilhe.
+   Se vazar, gere outro no @BotFather com /revoke e me peça pra atualizar.

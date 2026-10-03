@@ -1,0 +1,25 @@
+/* Rollover (TESTE) — estilos só desta aba */
+.nav-teste{font-size:9px;opacity:.6;margin-left:4px;text-transform:uppercase;letter-spacing:.04em}
+#aba-rollover .painel{margin-bottom:14px}
+#aba-rollover h3{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rl-tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid currentColor;opacity:.75}
+.rl-mut{color:var(--muted2,#8a93a6);font-size:12.5px}
+.rl-erro{color:#ff8a8a;font-size:12.5px}
+.rl-acoes{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.rl-tabwrap{overflow-x:auto;max-width:100%}
+.rl-tab{width:100%;border-collapse:collapse;font-size:12.5px}
+.rl-tab th,.rl-tab td{padding:6px 8px;border-bottom:1px solid rgba(255,255,255,.07);text-align:left;vertical-align:top;white-space:nowrap}
+.rl-tab td.rl-nums{white-space:normal;font-variant-numeric:tabular-nums}
+.rl-num{display:inline-block;margin:0 8px 3px 0}
+.rl-palpite{background:rgba(63,157,255,.12);border-radius:4px;padding:0 4px}
+.rl-transp{font-size:11px;white-space:normal;max-width:260px;margin-top:2px}
+.rl-pills{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 10px}
+.rl-pills .btn.on{outline:1px solid currentColor}
+.rl-casa{border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:8px 12px;margin-bottom:8px}
+.rl-casa ul{list-style:none;margin:6px 0 0;padding:0}
+.rl-casa li{display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:12.5px;padding:3px 0}
+.rl-sit{font-size:11.5px;padding:1px 8px;border-radius:999px}
+.rl-s-ok{background:rgba(46,204,113,.14);color:#6ee7a1}
+.rl-s-aviso{background:rgba(241,196,15,.14);color:#f5d36b}
+.rl-s-erro{background:rgba(231,76,60,.14);color:#ff8a8a}
+.rl-casa summary{cursor:pointer;display:flex;gap:8px;flex-wrap:wrap;align-items:center}

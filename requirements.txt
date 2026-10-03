@@ -1,0 +1,4 @@
+# servidor.py importa motor_autospin.py, que importa requests em nível global.
+# Necessária para iniciar o servidor, mesmo sem acionar integrações.
+# Testes de navegador também precisam de Node.js e Playwright, instalados à parte.
+requests>=2.31

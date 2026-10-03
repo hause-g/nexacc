@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "NexAcc Demo — Relatórios 1.32",
+  "version": "1.32",
+  "description": "Demonstração com dados fictícios em páginas de teste .invalid; não usar com contas reais.",
+  "permissions": [
+    "alarms",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8765/*"
+  ],
+  "background": {
+    "service_worker": "background_agente.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://maeteste.invalid/*"
+      ],
+      "js": [
+        "origem_main.js",
+        "core_agente.js",
+        "cryptolib.js",
+        "classify_agente.js",
+        "hook_agente.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "http://maeteste.invalid/*"
+      ],
+      "js": [
+        "origem_bridge.js",
+        "core_bridge.js",
+        "bridge_agente.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

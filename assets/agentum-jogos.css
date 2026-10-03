@@ -1,0 +1,76 @@
+/* Fichas em relevo: a luz vem sempre do alto-esquerda e a sombra projetada acompanha a altura —
+   e isso que faz o olho ler como objeto, nao como desenho. */
+.gj{margin:4px 0 0}
+.gj-card{border-radius:15px;overflow:hidden;border:1px solid var(--border);
+ background:linear-gradient(180deg,#191112 0%,#120c0d 100%);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.055),0 2px 3px rgba(0,0,0,.5),0 14px 34px rgba(0,0,0,.5)}
+.gj-head{display:flex;align-items:center;gap:13px;width:100%;border:0;padding:15px 17px;cursor:pointer;
+ text-align:left;font:inherit;color:var(--txt);background:linear-gradient(180deg,#221718 0%,#170f10 100%);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.07),inset 0 -1px 0 rgba(0,0,0,.6)}
+.gj-head:hover{background:linear-gradient(180deg,#2a1d1e 0%,#1b1213 100%)}
+.gj-head:active{box-shadow:inset 0 2px 5px rgba(0,0,0,.65)}
+.gj-mark{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;font-size:18px;flex:0 0 auto;
+ background:linear-gradient(160deg,#ffd873 0%,#f5c451 38%,#ff3b4e 100%);
+ box-shadow:inset 0 1px 1px rgba(255,255,255,.45),inset 0 -3px 6px rgba(120,20,30,.5),0 3px 9px rgba(245,196,81,.3);
+ text-shadow:0 1px 2px rgba(0,0,0,.4)}
+.gj-t{flex:1;min-width:0}
+.gj-t b{display:block;font-size:14.5px;font-weight:600;letter-spacing:.3px;text-shadow:0 1px 2px rgba(0,0,0,.6)}
+.gj-t small{display:block;font-size:11px;color:var(--muted);margin-top:3px}
+.gj-chev{color:var(--muted2);font-size:10px;transition:transform .2s cubic-bezier(.34,1.3,.64,1)}
+.gj[data-open="1"] .gj-chev{transform:rotate(180deg)}
+.gj-body{display:none;padding:16px 14px 6px;gap:14px 10px;grid-template-columns:repeat(auto-fill,minmax(108px,1fr));
+ background:linear-gradient(180deg,#0d0809 0%,#120c0d 100%);box-shadow:inset 0 6px 12px -6px rgba(0,0,0,.8)}
+.gj[data-open="1"] .gj-body{display:grid}
+.gj-btn{display:flex;flex-direction:column;align-items:center;gap:9px;background:none;border:0;padding:0;
+ cursor:pointer;color:var(--txt);font:inherit}
+.gj-coin{position:relative;width:74px;height:74px;border-radius:16px;display:grid;place-items:center;font-size:30px;overflow:hidden;
+ background:radial-gradient(circle at 32% 22%,hsl(var(--gj-h,28) 52% 40%) 0%,hsl(var(--gj-h,28) 58% 21%) 52%,#0d0809 108%);
+ border:1px solid hsl(var(--gj-h,28) 40% 32%);
+ box-shadow:inset 0 2px 3px rgba(255,255,255,.14),inset 0 -7px 13px rgba(0,0,0,.6),
+            0 4px 1px rgba(0,0,0,.5),0 9px 18px rgba(0,0,0,.55);
+ transition:transform .13s cubic-bezier(.34,1.3,.64,1),box-shadow .13s,border-color .13s}
+.gj-coin::after{content:"";position:absolute;inset:0 0 56% 0;border-radius:16px 16px 40% 40%/16px 16px 22% 22%;
+ background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,0));pointer-events:none;z-index:2}
+.gj-emoji{filter:drop-shadow(0 2px 3px rgba(0,0,0,.7));line-height:1}
+.gj-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.gj-star{position:absolute;top:4px;right:5px;z-index:3;font-size:10px;color:#ffd76a;line-height:1;
+ filter:drop-shadow(0 1px 2px rgba(0,0,0,.85))}
+.gj-top .gj-coin{border-color:hsl(var(--gj-h,28) 55% 46%)}
+.gj-btn:hover .gj-coin{transform:translateY(-3px);border-color:var(--petrol);
+ box-shadow:inset 0 2px 3px rgba(255,255,255,.18),inset 0 -5px 10px rgba(0,0,0,.7),
+            0 7px 1px rgba(0,0,0,.55),0 14px 26px rgba(0,0,0,.65),0 0 20px rgba(245,196,81,.32)}
+.gj-btn:active .gj-coin{transform:translateY(2px);
+ box-shadow:inset 0 3px 7px rgba(0,0,0,.8),0 1px 0 rgba(0,0,0,.5),0 3px 7px rgba(0,0,0,.5)}
+.gj-nome{font-size:11.5px;font-weight:500;line-height:1.3;color:var(--muted);text-align:center;
+ letter-spacing:.2px;transition:color .13s}
+.gj-btn:hover .gj-nome{color:var(--petrol2)}
+/* ainda aprendendo: a ficha existe, mas nao finge que abre */
+.gj-aprendendo .gj-coin{opacity:.42;filter:grayscale(.75)}
+.gj-aprendendo .gj-nome{color:var(--muted2)}
+.gj-aprendendo:hover .gj-coin{border-color:var(--border2);box-shadow:inset 0 2px 3px rgba(255,255,255,.12),
+ inset 0 -5px 10px rgba(0,0,0,.75),0 4px 1px rgba(0,0,0,.55),0 8px 18px rgba(0,0,0,.6);transform:none}
+.gj-live{padding:10px 17px 0;font-size:11.5px;color:var(--muted);min-height:20px}
+.gj-live b{color:var(--petrol2)}
+.gj-foot{padding:9px 17px 14px;font-size:11px;color:var(--muted2);display:flex;align-items:center;gap:7px}
+.gj-dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);flex:0 0 auto}
+.gj-dot.gj-off{background:var(--muted2);box-shadow:none}
+@media(max-width:520px){.gj-body{grid-template-columns:repeat(auto-fill,minmax(92px,1fr))}
+ .gj-coin{width:64px;height:64px;font-size:26px;border-radius:14px}}
+/* Seleção de casa: o operador roda duas ao mesmo tempo e nem sempre quer as duas. */
+.gj-casas{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 17px 2px;
+ font-size:11.5px;color:var(--muted);background:linear-gradient(180deg,#0d0809 0%,#120c0d 100%)}
+.gj-casas:empty{display:none}
+.gj-casas>span{color:var(--muted2);text-transform:uppercase;letter-spacing:.7px;font-size:10px}
+.gj-casas label{display:inline-flex;align-items:center;gap:6px;cursor:pointer;padding:4px 9px;border-radius:8px;
+ border:1px solid var(--border2);background:linear-gradient(180deg,#1c1314 0%,#140d0e 100%);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.05);transition:border-color .13s,color .13s}
+.gj-casas label:hover{border-color:var(--petrol);color:var(--txt)}
+.gj-casas input{accent-color:var(--petrol);width:13px;height:13px;margin:0}
+.gj-casas label:has(input:checked){border-color:var(--petrol);color:var(--petrol2)}
+.gj-busca{padding:10px 17px 4px}
+.gj-busca input{width:100%;box-sizing:border-box;padding:9px 12px;border-radius:9px;font-size:13px;
+ background:var(--card2,rgba(255,255,255,.03));border:1px solid var(--linha,rgba(255,255,255,.1));color:var(--txt)}
+.gj-busca input:focus{outline:none;border-color:var(--petrol);background:rgba(255,255,255,.05)}
+.gj-busca input::placeholder{color:var(--muted2)}
+.gj-vazio{padding:16px 17px;color:var(--muted2);font-size:12px}
+

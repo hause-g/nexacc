@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "NexAcc Demo — Eventos 1.81",
+  "version": "1.81",
+  "description": "Demonstração com dados fictícios em páginas de teste .invalid; não usar com contas reais.",
+  "permissions": [
+    "notifications",
+    "storage",
+    "alarms",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8765/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://filhateste.invalid/*"
+      ],
+      "js": [
+        "origem_main.js",
+        "normalizar.js",
+        "cryptolib.js",
+        "classify.js",
+        "hook.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "http://filhateste.invalid/*"
+      ],
+      "js": [
+        "origem_bridge.js",
+        "normalizar_bridge.js",
+        "bridge.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

@@ -1,0 +1,234 @@
+/* Auto Spin — fluxo visual em três etapas. Regras de negócio permanecem no módulo original. */
+#aba-autospin .as-page-head {min-height:0;padding:0 0 18px;margin:0 0 18px;border:0;border-bottom:1px solid #304552;border-radius:0;background:none;box-shadow:none}
+#aba-autospin .as-page-head::after {display:none}
+#aba-autospin .as-page-head .as-eyebrow {font-size:10px;margin:0 0 6px;color:#cbb483}
+#aba-autospin .as-page-head h2.tit {font-size:32px;line-height:1.2;letter-spacing:-.8px;margin:0}
+#aba-autospin .as-page-head .sub {font-size:14px;margin:8px 0 0;color:#aebfca;max-width:none}
+#aba-autospin .as-subabas {max-width:none;margin-bottom:20px;box-shadow:none;background:#0b1923;border-color:#344b58}
+#aba-autospin .as-subaba {font-size:14px;min-height:44px;padding:10px 16px}
+#aba-autospin .as-config-fluxo {--as-line:#354d5b;--as-gold:#e8ce96;--as-muted:#aebfca;display:grid;gap:18px}
+#aba-autospin .as-config-fluxo [hidden] {display:none!important}
+#aba-autospin .as-config-fluxo .as-etapa {min-width:0;padding:22px;border:1px solid var(--as-line);border-radius:12px;background:#0c1b25;box-shadow:none;margin:0}
+#aba-autospin .as-config-fluxo .as-etapa::before,
+#aba-autospin .as-config-fluxo .as-etapa::after {display:none}
+#aba-autospin .as-etapa-head {display:flex;align-items:flex-start;gap:14px;margin:0 0 18px;min-width:0}
+#aba-autospin .as-etapa-num {flex:none;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:linear-gradient(130deg,#f5dda7,#b8975d);color:#191a17;font-size:20px;font-weight:750}
+#aba-autospin .as-etapa-head h3 {font-size:22px;line-height:1.25;margin:0 0 6px;color:#f0f4f6;font-weight:650;letter-spacing:-.4px}
+#aba-autospin .as-etapa-head p {font-size:13px;line-height:1.55;color:var(--as-muted);margin:0}
+#aba-autospin .as-selecao-total {margin-left:auto;flex:none;font-size:13px;line-height:1.5;color:var(--as-gold);padding:7px 10px;background:#bca16a12;border:1px solid #bca16a44;border-radius:6px;font-variant-numeric:tabular-nums}
+#aba-autospin .as-contas-toolbar {display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 0 12px}
+#aba-autospin .as-contas-toolbar p {font-size:13px;color:var(--as-muted);margin:0}
+#aba-autospin .as-config-fluxo #asContasList {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:12px;max-height:360px;overflow:auto;padding:1px 8px 3px 1px}
+#aba-autospin .as-config-fluxo #asContasList>.as-info,
+#aba-autospin .as-config-fluxo #asContasList>.as-vazio {grid-column:1/-1;margin:0}
+#aba-autospin .as-config-fluxo #asContasList>.as-info {font-size:12px;padding:0 0 5px;border:0;background:none;box-shadow:none;color:var(--as-muted)}
+#aba-autospin .as-config-fluxo .as-casa {min-width:0;border:1px solid var(--as-line);border-radius:8px;margin:0;background:#091721;max-height:260px;overflow:auto;scrollbar-color:#688c9e #091820}
+#aba-autospin .as-config-fluxo .as-casa>summary {position:sticky;top:0;z-index:1;padding:12px 14px;font-size:14px;background:#132631;border-bottom:1px solid var(--as-line)}
+#aba-autospin .as-config-fluxo .as-conta {padding:10px 12px;margin:6px;gap:10px;border-radius:6px;border:1px solid #263d4a;background:#0b1b26;box-shadow:none}
+#aba-autospin .as-config-fluxo .as-conta:has(input:checked) {background:#ddc28c12;border-color:#c7ab6e88}
+#aba-autospin .as-config-fluxo .as-conta-id {font-size:14px;font-weight:550;color:#eaf1f5;line-height:1.5}
+#aba-autospin .as-config-fluxo .as-conta-host {font-size:12px;line-height:1.5;color:#a8beca}
+#aba-autospin .as-config-fluxo .as-casa-actions {display:flex;gap:8px;padding:8px 12px 12px;flex-wrap:wrap}
+#aba-autospin .as-config-fluxo .as-nota {margin:12px 0 0;font-size:12px;line-height:1.6;color:var(--as-muted);overflow-wrap:anywhere}
+#aba-autospin .as-config-fluxo .as-faixa {min-width:0;border:0;border-top:1px solid var(--as-line);padding:16px 0 0;margin:22px 0 0;border-radius:0;background:none}
+#aba-autospin .as-config-fluxo .as-faixa legend {font-size:14px;font-weight:650;letter-spacing:0;color:#e6d6b4;padding:0 10px 0 0}
+#aba-autospin .as-config-fluxo .as-faixa>.as-nota:first-of-type {margin-top:0;margin-bottom:12px}
+#aba-autospin .as-config-fluxo .as-campos {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+#aba-autospin .as-config-fluxo .as-campos--catalogo {grid-template-columns:minmax(0,.75fr) minmax(0,1.5fr) minmax(0,.8fr)}
+#aba-autospin .as-config-fluxo .as-field {min-width:0;display:flex;flex-direction:column;padding:0;border:0;background:none;border-radius:0;box-shadow:none;margin:0}
+#aba-autospin .as-config-fluxo .as-field label {font-size:13px;font-weight:500;line-height:1.5;margin:0 0 7px;color:#ccd9e1}
+#aba-autospin .as-config-fluxo .as-field :is(input,select) {min-width:0;width:100%;min-height:42px;padding:10px 12px;border:1px solid #47616f;border-radius:6px;background:#07151f;box-shadow:none;color:#f0f4f6;font-size:14px;line-height:1.35}
+#aba-autospin .as-config-fluxo .as-field :is(input,select):hover {border-color:#869bab}
+#aba-autospin .as-config-fluxo .as-field input::placeholder {color:#8aa1af;opacity:1}
+#aba-autospin .as-config-fluxo .as-catalog-actions {padding:10px 0 0;margin:0;justify-content:flex-end}
+#aba-autospin .as-config-fluxo .as-controles-execucao {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#aba-autospin .as-config-fluxo .as-controle-modo {display:flex;flex-direction:column;min-width:0;padding:15px;border:1px solid #39515e;border-radius:8px;background:#0a1822}
+#aba-autospin .as-config-fluxo .as-controle-nome {font-size:15px;font-weight:650;color:#f0e0ba}
+#aba-autospin .as-config-fluxo .as-controle-modo>p {font-size:12px;color:var(--as-muted);line-height:1.55;margin:6px 0 16px}
+#aba-autospin .as-config-fluxo .as-controle-modo>.as-field,
+#aba-autospin .as-config-fluxo .as-controle-modo>label {margin-top:auto}
+#aba-autospin .as-config-fluxo .as-controle-modo>label {display:flex;align-items:center;gap:12px;padding:10px 0;cursor:pointer;font-size:14px}
+#aba-autospin .as-config-fluxo .as-controle-modo>label small {display:block;font-size:12px;color:var(--as-muted);margin-top:3px}
+#aba-autospin .as-config-fluxo input[type="checkbox"] {width:18px;height:18px;accent-color:#dec28b;flex:none}
+#aba-autospin .as-config-fluxo .as-explicacao {margin:14px 0 0;padding:12px 14px;background:#142a35;border-left:3px solid #bca475;border-radius:0 6px 6px 0}
+#aba-autospin .as-config-fluxo .as-explicacao>span {font-size:12px;font-weight:650;color:#dfd0ae}
+#aba-autospin .as-config-fluxo #asCalcHint {background:none;border:0;box-shadow:none;padding:4px 0 0;margin:0;min-height:0;font-size:13px;line-height:1.6;color:#c3d5df}
+#aba-autospin .as-config-fluxo #asCalcHint:empty::after {content:"Confira os valores acima antes de iniciar."}
+#aba-autospin .as-config-fluxo .as-opcoes {margin-top:14px;border:1px solid var(--as-line);border-radius:8px;background:#0a1822}
+#aba-autospin .as-config-fluxo .as-opcoes>summary {padding:14px 16px;cursor:pointer;font-size:14px;font-weight:600;color:#e6eef3;line-height:1.6}
+#aba-autospin .as-config-fluxo .as-opcoes>summary span {font-size:12px;font-weight:400;color:var(--as-muted);margin-left:12px}
+#aba-autospin .as-config-fluxo .as-opcoes-corpo {padding:16px;border-top:1px solid var(--as-line)}
+#aba-autospin .as-config-fluxo .as-checks {grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
+#aba-autospin .as-config-fluxo .as-checks label {padding:12px;min-height:60px;border-radius:6px;border-color:#344b58;background:#10232e;box-shadow:none;font-size:13px}
+#aba-autospin .as-config-fluxo .as-checks small {font-size:12px;line-height:1.5}
+#aba-autospin .as-config-fluxo .as-revisao {display:flex;align-items:center;justify-content:space-between;gap:24px;border-color:#9b8456;background:linear-gradient(105deg,#d4b5740b,#0c1b25 65%)}
+#aba-autospin .as-config-fluxo .as-revisao-copy {min-width:0;flex:1}
+#aba-autospin .as-config-fluxo .as-revisao .as-etapa-head {margin-bottom:8px}
+#aba-autospin .as-config-fluxo .as-revisao-config {font-size:13px;line-height:1.6;color:#e9e3d6;margin:0 0 0 50px;overflow-wrap:anywhere}
+#aba-autospin .as-config-fluxo .as-revisao .as-nota {margin:7px 0 0 50px}
+#aba-autospin .as-config-fluxo .as-actions {display:flex;flex-direction:column;padding:0;margin:0;gap:10px;border:0;background:none;box-shadow:none;position:static}
+#aba-autospin .as-config-fluxo .as-actions .btn {min-width:180px;min-height:44px;font-size:14px}
+#aba-autospin .as-config-fluxo .as-actions .danger {background:#241b25;border-color:#815864;color:#e5b8c2;box-shadow:none}
+#aba-autospin .as-config-fluxo .btn.mini {font-size:12px;min-height:36px;padding:8px 12px;white-space:normal}
+#aba-autospin #asCardsBox {align-items:start}
+@media(max-width:1100px) {
+ #aba-autospin .as-config-fluxo .as-etapa {padding:18px}
+ #aba-autospin .as-etapa-head {flex-wrap:wrap}
+ #aba-autospin .as-etapa-head>div {flex:1;min-width:160px}
+ #aba-autospin .as-selecao-total {margin-left:50px}
+ #aba-autospin .as-config-fluxo .as-campos--catalogo {grid-template-columns:repeat(2,minmax(0,1fr))}
+ #aba-autospin .as-config-fluxo .as-campos--catalogo>.as-field:nth-child(2) {grid-column:2;grid-row:1 / span 2}
+}
+@media(max-width:760px) {
+ #aba-autospin .as-config-fluxo .as-controles-execucao {grid-template-columns:minmax(0,1fr)}
+ #aba-autospin .as-config-fluxo .as-campos,
+ #aba-autospin .as-config-fluxo .as-checks {grid-template-columns:repeat(2,minmax(0,1fr))}
+ #aba-autospin .as-config-fluxo .as-revisao {flex-direction:column;align-items:stretch;gap:18px}
+ #aba-autospin .as-config-fluxo .as-actions {flex-direction:row}
+ #aba-autospin .as-config-fluxo .as-actions .btn {min-width:0;flex:1}
+}
+@media(max-width:540px) {
+ #aba-autospin .as-page-head h2.tit {font-size:28px}
+ #aba-autospin .as-subaba {font-size:12px;padding:9px 5px}
+ #aba-autospin .as-config-fluxo .as-etapa {padding:14px}
+ #aba-autospin .as-etapa-head {gap:10px}
+ #aba-autospin .as-etapa-head h3 {font-size:19px}
+ #aba-autospin .as-selecao-total {margin-left:0;flex-basis:100%;text-align:center}
+ #aba-autospin .as-contas-toolbar {align-items:flex-start;flex-direction:column}
+ #aba-autospin .as-config-fluxo #asContasList {grid-template-columns:minmax(0,1fr);max-height:330px}
+ #aba-autospin .as-config-fluxo .as-campos,
+ #aba-autospin .as-config-fluxo .as-checks {grid-template-columns:minmax(0,1fr)}
+ #aba-autospin .as-config-fluxo .as-campos--catalogo>.as-field:nth-child(2) {grid-column:auto;grid-row:auto}
+ #aba-autospin .as-config-fluxo .as-opcoes>summary span {display:block;margin:4px 0 0}
+ #aba-autospin .as-config-fluxo .as-revisao-config,
+ #aba-autospin .as-config-fluxo .as-revisao .as-nota {margin-left:0}
+ #aba-autospin .as-config-fluxo .as-opcoes-corpo {padding:12px}
+}
+
+#aba-autospin .as-config-fluxo .as-explicacao:has(#asCalcHint:empty) {display:none}
+
+
+/* Acabamento Titanium: metal escovado, luz e profundidade. Somente apresentacao. */
+#aba-autospin .as-config-fluxo .as-etapa {
+  position:relative;isolation:isolate;
+  border-color:#526674;border-top-color:#81949f;border-bottom-color:#263943;
+  background:
+    repeating-linear-gradient(0deg,#d6e9f503 0 1px,transparent 1px 4px),
+    radial-gradient(ellipse at 0 0,#8db6cb23,transparent 55%),
+    linear-gradient(135deg,#203340 0%,#13232e 44%,#0a151e 100%);
+  box-shadow:inset 0 1px 0 #e1f2ff25,inset 0 -1px 0 #0009,0 10px 22px #0005;
+}
+#aba-autospin .as-config-fluxo .as-etapa::before {
+  content:"";display:block;position:absolute;top:0;left:24px;right:24px;height:1px;width:auto;
+  pointer-events:none;background:linear-gradient(90deg,transparent,#f7dc9ab0 22%,#d6eaf55c 65%,transparent);
+  box-shadow:0 1px 7px #c9e6ff1c;
+}
+#aba-autospin .as-config-fluxo .as-etapa.as-contas {
+  border-top-color:#99b9ca;
+  background:
+    repeating-linear-gradient(125deg,transparent 0 62px,#d3edff06 63px,transparent 64px 126px),
+    repeating-linear-gradient(0deg,#e4f3ff04 0 1px,transparent 1px 4px),
+    radial-gradient(ellipse at 0 0,#5b9cc348,transparent 58%),
+    radial-gradient(ellipse at 100% 0,#8c79b92b,transparent 50%),
+    linear-gradient(145deg,#263c4c,#13232e 52%,#0a151f);
+}
+#aba-autospin .as-etapa-num {
+  color:#2c230f;
+  background:linear-gradient(135deg,#fff7d9 0%,#e7c47d 35%,#b28b43 49%,#f7df9f 53%,#d0a459 100%);
+  box-shadow:inset 0 1px 1px #fffde6,inset 0 -2px 2px #68481799,0 3px 0 #705731,0 6px 12px #0007;
+  text-shadow:0 1px 0 #fff5cf80;
+}
+#aba-autospin .as-config-fluxo .as-etapa-head h3 {color:#f3f6f8;text-shadow:0 2px 2px #0007}
+#aba-autospin .as-config-fluxo .as-selecao-total {
+  color:#fff0bf;border-color:#d2b171;border-top-color:#ffe0a3;border-bottom-color:#7d6337;
+  background:linear-gradient(120deg,#ffe9b918,transparent 42%),linear-gradient(160deg,#57472a,#302c22 65%,#413624);
+  box-shadow:inset 0 1px 0 #fff0ca40,inset 0 -1px 0 #0008,0 3px 7px #0005;
+  text-shadow:0 1px 2px #0008;
+}
+#aba-autospin .as-config-fluxo .as-casa {
+  --as-casa-rgb:108,182,237;
+  border-color:rgba(var(--as-casa-rgb),.6);border-top-color:rgba(var(--as-casa-rgb),.92);
+  background:
+    repeating-linear-gradient(135deg,#dcefff05 0 1px,transparent 1px 7px),
+    radial-gradient(ellipse at 0 0,rgba(var(--as-casa-rgb),.2),transparent 80%),
+    linear-gradient(150deg,#172b39,#0b1924);
+  box-shadow:inset 3px 0 0 rgba(var(--as-casa-rgb),.75),inset 0 1px 0 #e5f4ff40,inset -1px -2px 0 #0006,0 5px 12px #0005;
+  scrollbar-color:rgba(var(--as-casa-rgb),.65) #091820;
+}
+#aba-autospin .as-config-fluxo .as-casa:nth-of-type(3n+2) {--as-casa-rgb:184,156,237}
+#aba-autospin .as-config-fluxo .as-casa:nth-of-type(3n) {--as-casa-rgb:101,207,209}
+#aba-autospin .as-config-fluxo .as-casa>summary {
+  background:
+    repeating-linear-gradient(0deg,#f3faff08 0 1px,transparent 1px 3px),
+    linear-gradient(118deg,transparent 20%,#f0f8ff1c 39%,transparent 42%,transparent 74%,#e7f5ff0a 77%,transparent 80%),
+    linear-gradient(140deg,rgba(var(--as-casa-rgb),.58),rgba(var(--as-casa-rgb),.2) 46%,rgba(var(--as-casa-rgb),.36) 52%,rgba(var(--as-casa-rgb),.12)),#112534;
+  border-bottom-color:rgba(var(--as-casa-rgb),.55);
+  box-shadow:inset 0 1px 0 #f0faff50,inset 0 -1px 0 #0006,0 3px 9px #0005;
+}
+#aba-autospin .as-config-fluxo .as-casa>summary b {color:#f1f6ff;text-shadow:0 1px 3px #000b}
+#aba-autospin .as-config-fluxo .as-casa-total {
+  color:#e8f3ff;border-color:rgba(var(--as-casa-rgb),.55);
+  background:linear-gradient(180deg,#061520bc,#163347d9);
+  box-shadow:inset 0 2px 3px #0008,0 1px 0 #e5f3ff26;text-shadow:0 1px 2px #0009;
+}
+#aba-autospin .as-config-fluxo .as-conta {
+  background:
+    linear-gradient(115deg,#ffffff0d,transparent 42%),
+    radial-gradient(ellipse at 0 0,rgba(var(--as-casa-rgb),.13),transparent 80%),
+    linear-gradient(170deg,#203644,#11232f 65%,#0d1d28);
+  border-color:rgba(var(--as-casa-rgb),.3);border-top-color:rgba(var(--as-casa-rgb),.5);
+  box-shadow:inset 0 1px 0 #e3f5ff17,inset 0 -1px 0 #0007,0 3px 5px #0004;
+  transition:border-color .16s,box-shadow .16s;
+}
+#aba-autospin .as-config-fluxo .as-conta:hover {
+  border-color:rgba(var(--as-casa-rgb),.9);
+  box-shadow:inset 0 1px 0 #e3f5ff30,inset 0 0 18px rgba(var(--as-casa-rgb),.1),0 3px 8px #0006;
+}
+#aba-autospin .as-config-fluxo .as-conta:has(input:checked) {
+  background:
+    repeating-linear-gradient(0deg,#ffefc406 0 1px,transparent 1px 4px),
+    linear-gradient(115deg,#ffe4a629,transparent 43%,#ffedbe0b 57%,transparent 62%),
+    linear-gradient(145deg,#655232,#3c382a 45%,#293232 100%);
+  border-color:#e1bd77;border-top-color:#ffe8ae;border-bottom-color:#8e703c;
+  box-shadow:inset 3px 0 0 #f4d894,inset 0 1px 0 #fff3c862,inset 0 -1px 0 #0008,0 4px 7px #0006;
+}
+#aba-autospin .as-config-fluxo .as-conta:has(input:checked) .as-conta-id {color:#fff1ca;text-shadow:0 1px 2px #0009}
+#aba-autospin .as-config-fluxo .as-conta:has(input:checked) .as-conta-host {color:#d7e1e6}
+#aba-autospin .as-config-fluxo .as-casa-actions .btn:not(.ghost) {
+  color:#eaf5ff;border-color:rgba(var(--as-casa-rgb),.65);
+  background:linear-gradient(160deg,rgba(var(--as-casa-rgb),.3),rgba(var(--as-casa-rgb),.08)),#112534;
+  box-shadow:inset 0 1px 0 #eff9ff35,inset 0 -1px 0 #0007,0 2px 4px #0005;
+}
+#aba-autospin .as-config-fluxo .as-field :is(input,select) {
+  background:linear-gradient(180deg,#060f18,#102430);
+  border-color:#314955;border-bottom-color:#66829199;
+  box-shadow:inset 0 2px 5px #0009,inset 0 -1px 0 #dff3ff0c,0 1px 0 #dae9f512;
+}
+#aba-autospin .as-config-fluxo .as-controle-modo {
+  border-color:#516674;border-top-color:#8b9696;
+  background:radial-gradient(ellipse at 0 0,#dcbf7d14,transparent 60%),linear-gradient(145deg,#223542,#11212c 65%,#0c1923);
+  box-shadow:inset 0 1px 0 #f5e6c12b,inset 0 -1px 0 #0008,0 4px 9px #0004;
+}
+#aba-autospin .as-config-fluxo .as-opcoes {
+  border-color:#475e6b;border-top-color:#788b96;
+  background:linear-gradient(160deg,#253946,#11222d 58%,#0b1721);
+  box-shadow:inset 0 1px 0 #d7ebf321,inset 0 -1px 0 #0008,0 4px 8px #0004;
+}
+#aba-autospin .as-config-fluxo .as-opcoes>summary {text-shadow:0 1px 2px #0006}
+#aba-autospin .as-config-fluxo .as-revisao {
+  border-color:#9e854f;border-top-color:#dec68e;
+  background:
+    repeating-linear-gradient(125deg,transparent 0 80px,#ecd29b05 81px,transparent 82px 164px),
+    radial-gradient(ellipse at 0 0,#b9964e29,transparent 65%),
+    linear-gradient(135deg,#2d342f,#15252c 55%,#0c1822);
+  box-shadow:inset 0 1px 0 #fff0c23b,inset 0 -1px 0 #0009,0 8px 18px #0006;
+}
+#aba-autospin .as-subabas {
+  border-color:#50616a;border-top-color:#81939c;
+  background:linear-gradient(180deg,#263945,#0c1b26);
+  box-shadow:inset 0 1px 0 #e3f3ff25,inset 0 -2px 3px #0008,0 5px 12px #0005;
+}
+#aba-autospin .as-config-fluxo .as-actions .btn.go {
+  background:var(--as-metal);border-color:#f1d99f;
+  box-shadow:inset 0 1px 0 #fff9df,inset 0 -1px 0 #846638,0 3px 0 #70542d,0 6px 12px #0007;
+}
